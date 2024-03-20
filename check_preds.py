@@ -4,7 +4,7 @@ from models.experimental import attempt_load
 from utils.general import non_max_suppression, scale_coords
 from utils.plots import plot_one_box
 from torchvision import transforms
-
+import os
 def run_inference(weights_path, source_path, conf_thres=0.25, iou_thres=0.45, img_size=640, device='cpu'):
     # Load the model
     model = attempt_load(weights_path, map_location=device)
@@ -85,6 +85,7 @@ def run_inference(weights_path, source_path, conf_thres=0.25, iou_thres=0.45, im
         cv2.destroyAllWindows()
 
 if __name__ == '__main__':
-    weights_path = '/Users/maniksinghsarmaal/Downloads/yolov7/runs/train/exp7/weights/best.pt'  # Replace with the path to your trained weights
-    source_path = 0  # Replace with the path to your image, video, or webcam (0 for default webcam)
+    script_directory = os.path.dirname(os.path.abspath(__file__))
+    weights_path = os.path.join(script_directory, 'Model_DATA', 'weights', 'best.pt') #weights file path
+    source_path = 0  # Path of your image, video, or webcam (0 for default webcam)
     run_inference(weights_path, source_path)
