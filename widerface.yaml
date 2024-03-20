@@ -1,7 +1,7 @@
 path: /Users/maniksinghsarmaal/Downloads/yolov7/dataset
-train: dataset/images/train  # Path to the training image folder relative to "path"
-val: dataset/images/val     # Optional: Path to the validation image folder (if using)
-test: dataset/images/test
+train: dataset/images/train  # Path to the training image folder relative to "path" but make sure to add endpoint to initial of it 
+val: dataset/images/val     # Optional: Path to the validation image folder 
+test: dataset/images/test # test_dataset path
 nc: 1
 augment: True 
 names: [ 'Human Face' ]
