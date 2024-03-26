@@ -37,7 +37,7 @@ Optional: Testing with Images or Videos:
 
 Modify the source_path variable within the check_preds.py script to specify an image or video file path (refer to the script for details).
 
-** Model Weights Location: **
+* Model Weights Location: 
 
 yolov7/weights/best.pt: Weights for the yolov7 model.
 yolov7_light/weights/best.pt: Weights for the yolov7_light model.
