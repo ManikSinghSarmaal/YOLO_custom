@@ -41,8 +41,6 @@ Modify the source_path variable within the check_preds.py script to specify an i
 
 yolov7/weights/best.pt: Weights for the yolov7 model.
 yolov7_light/weights/best.pt: Weights for the yolov7_light model.
-** Training Your Own Custom Model**
-
 ```bash
 #Note : Model weights are in MODEL_DATA dir 
 ├── yolov7
