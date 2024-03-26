@@ -33,7 +33,7 @@ python check_preds.py
 ```bash
 python test_light.py
 ```
-# Optionally, you can modify the check_preds.py script to change the input source to an image file or video by adjusting the source_path variable.
+Optionally, you can modify the check_preds.py script to change the input source to an image file or video by adjusting the source_path variable.
 
 ```bash
 #Note : Model weights are in MODEL_DATA dir 
