@@ -33,7 +33,15 @@ python check_preds.py
 ```bash
 python test_light.py
 ```
-Optionally, you can modify the check_preds.py script to change the input source to an image file or video by adjusting the source_path variable.
+Optional: Testing with Images or Videos:
+
+Modify the source_path variable within the check_preds.py script to specify an image or video file path (refer to the script for details).
+
+** Model Weights Location: **
+
+yolov7/weights/best.pt: Weights for the yolov7 model.
+yolov7_light/weights/best.pt: Weights for the yolov7_light model.
+** Training Your Own Custom Model**
 
 ```bash
 #Note : Model weights are in MODEL_DATA dir 
