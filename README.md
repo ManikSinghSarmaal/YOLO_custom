@@ -9,7 +9,7 @@ Follow these steps to get started with the project:
 1. Clone this repository:
 ```bash
    git clone https://github.com/ManikSinghSarmaal/YOLO_custom
-
+```
 # Create a new conda environment and activate it
 conda create --name yolov7_env python=3.11
 conda activate yolov7_env
@@ -20,7 +20,27 @@ cd YOLOv7_custom
 # Install the required dependencies
 pip install -r requirements.txt
 
-# Run the check_preds.py script to test detections using webcam feed
-python check_preds.py
+## YOLOV7 MODEL
 
-#Optionally, you can modify the check_preds.py script to change the input source to an image file or video by adjusting the source_path variable.
+# Run the check_preds.py script to test detections using webcam feed for YOLOV7
+```bash
+python check_preds.py
+```
+
+## YOLOV7_light_model
+
+# Run the check_preds.py script to test detections using webcam feed for YOLOV7_light
+```bash
+python test_light.py
+```
+# Optionally, you can modify the check_preds.py script to change the input source to an image file or video by adjusting the source_path variable.
+
+```bash
+#Note : Model weights are in MODEL_DATA dir 
+├── yolov7
+│   └── weights
+│       └── best.pt #yolov7
+└── yolov7_light
+    └── weights
+        └── best.pt #yolov7_light_model
+```

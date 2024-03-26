@@ -84,6 +84,6 @@ def run_inference(weights_path, source_path, conf_thres=0.25, iou_thres=0.45, im
 
 if __name__ == '__main__':
     script_directory = os.path.dirname(os.path.abspath(__file__))
-    weights_path = os.path.join(script_directory, 'Model_DATA', 'weights', 'best.pt') #weights file path
+    weights_path = os.path.join(script_directory, 'Model_DATA','yolov7' ,'weights', 'best.pt') #weights file path
     source_path = 0 # Path of your image, video, or webcam (0 for default webcam)
     run_inference(weights_path, source_path)
